@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"oled-2\ssd1306.o"
+"oled-2\fonts.o"
+"oled-2\i2c-lcd.o"
+"oled-2\main.o"
+"oled-2\stm32f1xx_it.o"
+"oled-2\stm32f1xx_hal_msp.o"
+"oled-2\img.o"
+"oled-2\stm32f1xx_hal_gpio_ex.o"
+"oled-2\stm32f1xx_hal_i2c.o"
+"oled-2\stm32f1xx_hal_tim.o"
+"oled-2\stm32f1xx_hal_tim_ex.o"
+"oled-2\stm32f1xx_hal_uart.o"
+"oled-2\stm32f1xx_hal.o"
+"oled-2\stm32f1xx_hal_rcc.o"
+"oled-2\stm32f1xx_hal_rcc_ex.o"
+"oled-2\stm32f1xx_hal_gpio.o"
+"oled-2\stm32f1xx_hal_dma.o"
+"oled-2\stm32f1xx_hal_cortex.o"
+"oled-2\stm32f1xx_hal_pwr.o"
+"oled-2\stm32f1xx_hal_flash.o"
+"oled-2\stm32f1xx_hal_flash_ex.o"
+"oled-2\startup_stm32f103xb.o"
+"oled-2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "oled-2\oled-2.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "oled-2.map" -o oled-2\oled-2.axf
